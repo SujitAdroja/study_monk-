@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/general.css" />
+    <link rel="stylesheet" href="/css/login.css" />
+    <link rel="stylesheet" href="/css/query.css" />
+    <title>Login and Register</title>
+  </head>
+  <body>
+    <section class="login-section">
+      <div class="login-container">
+        <div class="login-form-container login-grid grid--center-v">
+          <div class="loginPage-image">
+            <img src="./images/form image.jpg" class="login_image" alt="" />
+          </div>
+          <div class="login-form-section">
+            <h2 class="login-heading">LOGIN</h2>
+            <form action="" class="login-form">
+              <div>
+                <label for="name">Username*</label>
+                <input
+                  type="text"
+                  name="username"
+                  id="name"
+                  placeholder="Enter Your Name"
+                />
+              </div>
+              <div>
+                <label for="password">Password*</label>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="Enter Your Password"
+                />
+              </div>
+              <div class="remember-flex">
+                <input
+                  type="checkbox"
+                  name="remember_me"
+                  id="remember"
+                  class="checkbox"
+                />
+                <p class="remember-text">Remember Me</p>
+              </div>
+              <input type="submit" class="login-btn" value="Login" />
+              <a href="javascript:void(0)" class="forgot_password"
+                >Forgot Password</a
+              >
+              <div class="register_new">
+                <p>Don't have account</p>
+                <a href="javascript:void(0)" class="register-link"
+                  >Register Now</a
+                >
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

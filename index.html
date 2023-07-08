@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Always include this line of code!!! -->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <link rel="stylesheet" href="css/query.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script defer src="js/app.js"></script>
+
+    <title>Recuitement solution</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html" class="logo"> RD Solution </a>
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#how">How it works</a></li>
+
+          <li>
+            <a class="main-nav-link" href="#testimonials">Testimonials</a>
+          </li>
+          <li>
+            <a class="main-nav-link" href="#features">Features</a>
+          </li>
+          <li>
+            <a class="main-nav-link" href="/searchCandidate.html">Search</a>
+          </li>
+          <li>
+            <a class="main-nav-link nav-login" href="/login_register.html"
+              >Login</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+
+    <main>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">
+              Elevate Your Hiring Experience with Technology
+            </h1>
+            <p class="hero-description">
+              Our online recruitment solution empowers businesses to
+              effortlessly connect with the best talent. Say goodbye to
+              time-consuming and inefficient hiring processes, and welcome a
+              streamlined approach that brings exceptional candidates directly
+              to your fingertips.
+            </p>
+            <a
+              href="/searchCandidate.html"
+              class="btn btn--full margin-right-sm"
+              >Start Searching</a
+            >
+            <a href="#how" class="btn btn--outline">Learn more &darr;</a>
+          </div>
+          <div class="hero-img-box">
+            <picture>
+              <source srcset="/images/hero-image.jpg" type="image/png" />
+
+              <img
+                src="/images/hero-image.jpg"
+                class="hero-img"
+                alt="Recruitment image"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-featured" id="features">
+        <div class="container">
+          <h2 class="heading-featured-in">As featured in</h2>
+          <div class="logos">
+            <img src="img/logos/techcrunch.png" alt="Techcrunch logo" />
+            <img
+              src="img/logos/business-insider.png"
+              alt="Business Insider logo"
+            />
+            <img
+              src="img/logos/the-new-york-times.png"
+              alt="The New York Times logo"
+            />
+            <img src="img/logos/forbes.png" alt="Forbes logo" />
+            <img src="img/logos/usa-today.png" alt="USA Today logo" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section-how" id="how">
+        <div class="container">
+          <h2 class="heading-secondary how_heading">
+            Find Your Best
+            <p>Applicant In Less Than</p>
+            <p class="time">4 Minutes</p>
+          </h2>
+        </div>
+
+        <div class="container grid grid--2-cols grid--center-v">
+          <div class="steps">
+            <div class="step">
+              <p class="step-number active">1</p>
+              <h3 class="step-description">Sign up</h3>
+            </div>
+            <div class="step">
+              <p class="step-number">2</p>
+              <h3 class="step-description">
+                Search candidate using location and job role
+              </h3>
+            </div>
+            <div class="step">
+              <p class="step-number">3</p>
+              <h3 class="step-description">Find Best Candidate</h3>
+            </div>
+            <div class="step">
+              <p class="step-number">4</p>
+              <h3 class="step-description">Sign up</h3>
+            </div>
+          </div>
+          <div class="how-it-work-image">
+            <img
+              src="/images/how it works.png"
+              alt="how it work image"
+              class="hiw_image"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section-testimonials" id="testimonials">
+        <div class="testimonials-container">
+          <span class="subheading">Testimonials</span>
+          <h2 class="heading-secondary">Saved Us Time and Effort</h2>
+
+          <div class="testimonials">
+            <figure class="testimonial">
+              <img
+                class="testimonial-img"
+                alt="Photo of customer Dave Bryson"
+                src="images/customers/customer-1.jpg"
+              />
+              <blockquote class="testimonial-text">
+                This app transformed our hiring process, simplifying job
+                posting, applicant tracking, and evaluation. We now find and
+                hire top talent quickly, saving valuable time and resources.
+              </blockquote>
+              <p class="testimonial-name">&mdash; Dave Bryson</p>
+            </figure>
+
+            <figure class="testimonial">
+              <img
+                class="testimonial-img"
+                alt="Photo of customer Ben Hadley"
+                src="images/customers/customer-2.jpg"
+              />
+              <blockquote class="testimonial-text">
+                With automated resume screening and smart candidate matching,
+                this app saved us hours of manual effort, presenting us with a
+                shortlist of highly relevant candidates.
+              </blockquote>
+              <p class="testimonial-name">&mdash; Ben Hadley</p>
+            </figure>
+
+            <figure class="testimonial">
+              <img
+                class="testimonial-img"
+                alt="Photo of customer Steve Miller"
+                src="images/customers/customer-3.jpg"
+              />
+              <blockquote class="testimonial-text">
+                This app's comprehensive search functionality helped us quickly
+                find highly qualified candidates who
+              </blockquote>
+              <p class="testimonial-name">&mdash; Steve Miller</p>
+            </figure>
+
+            <figure class="testimonial">
+              <img
+                class="testimonial-img"
+                alt="Photo of customer Hannah Smith"
+                src="images/customers/customer-4.jpg"
+              />
+              <blockquote class="testimonial-text">
+                This app streamlined our hiring with seamless job posting,
+                intuitive candidate management, collaborative features, and
+                insightful analytics.
+              </blockquote>
+              <p class="testimonial-name">&mdash; Hannah Smith</p>
+            </figure>
+            <figure class="testimonial">
+              <img
+                class="testimonial-img"
+                alt="Photo of customer Hannah Smith"
+                src="images/customers/customer-5.jpg"
+              />
+              <blockquote class="testimonial-text">
+                Since implementing this app, our hiring process has become
+                significantly more efficient. The streamlined job posting,
+                automated applicant tracking, and intuitive candidate evaluation
+                have saved us valuable time and allowed us to make faster and
+                smarter hiring decisions
+              </blockquote>
+              <p class="testimonial-name">&mdash; Hannah Smith</p>
+            </figure>
+            <figure class="testimonial">
+              <img
+                class="testimonial-img"
+                alt="Photo of customer Hannah Smith"
+                src="images/customers/customer-4.jpg"
+              />
+              <blockquote class="testimonial-text">
+                Using this app, we've experienced exceptional talent acquisition
+                outcomes. The advanced search capabilities and precise candidate
+                matching have enabled us to connect with highly qualified
+                individuals who perfectly align with our organizational needs
+                and values. It's been instrumental in our ability to build a
+                strong and diverse team.
+              </blockquote>
+              <p class="testimonial-name">&mdash; Hannah Smith</p>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-cta" id="cta">
+        <div class="container">
+          <div class="cta">
+            <div class="cta-text-box">
+              <h2 class="heading-secondary">Start Searching Now</h2>
+              <p class="cta-text">
+                Healthy, tasty and hassle-free meals are waiting for you. Start
+                eating well today. You can cancel or pause anytime. And the
+                first meal is on us!
+              </p>
+
+              <form class="cta-form" name="sign-up">
+                <div>
+                  <label for="full-name">Full Name</label>
+                  <input
+                    id="full-name"
+                    type="text"
+                    placeholder="John Smith"
+                    name="full-name"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="email">Email address</label>
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="me@example.com"
+                    name="email"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="select-where">Where did you hear from us?</label>
+                  <select id="select-where" name="select-where" required>
+                    <option value="">Please choose one option:</option>
+                    <option value="friends">Friends and family</option>
+                    <option value="youtube">YouTube video</option>
+                    <option value="podcast">Podcast</option>
+                    <option value="ad">Facebook ad</option>
+                    <option value="others">Others</option>
+                  </select>
+                </div>
+
+                <button class="btn btn--form">Sign up now</button>
+
+                <!-- <input type="checkbox" />
+                <input type="number" /> -->
+              </form>
+            </div>
+            <div
+              class="cta-img-box"
+              role="img"
+              aria-label="Woman enjoying food"
+            ></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container grid grid--footer">
+        <div class="logo-col">
+          <a href="javascript:void(0)" class="logo margin-bottom-md">
+            RD Solution
+          </a>
+
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+          </ul>
+
+          <p class="copyright">
+            Copyright &copy; <span class="year">2027</span> by Rescurite
+            Digital, Inc. All rights reserved.
+          </p>
+        </div>
+
+        <div class="address-col">
+          <p class="footer-heading">Contact us</p>
+          <address class="contacts">
+            <p class="address">
+              623 Harrison St., 2nd Floor, San Francisco, CA 94107
+            </p>
+            <p>
+              <a class="footer-link" href="tel:415-201-6370">415-201-6370</a
+              ><br />
+              <a class="footer-link" href="mailto:hello@omnifood.com"
+                >hello@recruitedigital.com</a
+              >
+            </p>
+          </address>
+        </div>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Account</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Create account</a></li>
+            <li><a class="footer-link" href="#">Sign in</a></li>
+            <li><a class="footer-link" href="#">iOS app</a></li>
+            <li><a class="footer-link" href="#">Android app</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">About RD solutions</a></li>
+            <li><a class="footer-link" href="#">For Business</a></li>
+
+            <li><a class="footer-link" href="#">Careers</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Resources</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Help center</a></li>
+            <li><a class="footer-link" href="#">Privacy & terms</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
