@@ -7,8 +7,10 @@
 }
 .search_candidate {
   display: grid;
-  grid-template-columns: 1fr 1fr 0.5fr;
+  grid-template-columns: repeat(3, 1fr);
   column-gap: 1rem;
+  padding: 0 3rem;
+  margin: 0 1rem;
 }
 .search_candidate div input {
   font-size: 1.6rem;
@@ -17,7 +19,11 @@
   background-color: rgb(245, 245, 245);
   border: 1px solid black;
 }
+.search_candidate div input:focus {
+  outline: 2px solid #263873;
+}
 .btn-search {
+  width: 100%;
   padding: 1rem;
   border: none;
   background-color: #263873;
@@ -30,8 +36,10 @@
 }
 .candidate-container {
   max-width: 70rem;
-  margin: 0 50rem;
+  margin: 0 auto;
+  padding: 0 4.2rem;
   padding-bottom: 9.6rem;
+
   display: flex;
   flex-direction: column;
   gap: 20px;

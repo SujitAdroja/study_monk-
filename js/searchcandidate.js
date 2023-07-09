@@ -148,14 +148,15 @@ const data = [
 searchBtn.addEventListener("click", async function (e) {
   const jobrole = jobroleSearch.value;
   const location = locationSearch.value;
-
+  console.log(jobrole === "", location === "");
   let jobData = data.filter((d) => d.jobRole === jobrole);
   let locationData = data.filter((d) => d.location === location);
 
   let html = ``;
+
   for (let i = 0; i < jobData.length; i++) {
     html += `
-    <div class="candidate">
+        <div class="candidate">
           <div class="container-header">
             <div class="developer-name">${jobData[i].name}</div>
             <div class="developer-role">${jobData[i].location}</div>
@@ -176,7 +177,7 @@ searchBtn.addEventListener("click", async function (e) {
   }
   for (let i = 0; i < locationData.length; i++) {
     html += `
-    <div class="candidate">
+        <div class="candidate">
           <div class="container-header">
             <div class="developer-name">${locationData[i].name}</div>
             <div class="developer-role">${locationData[i].location}</div>
@@ -195,6 +196,7 @@ searchBtn.addEventListener("click", async function (e) {
         </div>
     `;
   }
+
   const container = document.querySelector(".candicate-box");
   container.innerHTML = html;
 });

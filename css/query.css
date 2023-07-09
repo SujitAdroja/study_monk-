@@ -79,10 +79,6 @@
     width: 60%;
   }
 
-  .logos img {
-    height: 2.4rem;
-  }
-
   .step-number {
     font-size: 7.4rem;
   }
@@ -125,18 +121,8 @@
     align-items: center;
     justify-content: center;
     transition: all 0.5s ease-in;
-
-    /* Hide navigation */
-    /* Allows NO transitions at all */
-    /* display: none; */
-
-    /* 1) Hide it visually */
     opacity: 0;
-
-    /* 2) Make it unaccessible to mouse and keyboard */
     pointer-events: none;
-
-    /* 3) Hide it from screen readers */
     visibility: hidden;
   }
 
@@ -180,11 +166,6 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .diets {
-    grid-column: 1 / -1;
-    justify-self: center;
-  }
-
   .heading-secondary {
     margin-bottom: 4.8rem;
   }
@@ -202,6 +183,17 @@
     grid-row: 1;
     grid-column: span 2;
     margin-bottom: 3.2rem;
+  }
+  .search-section {
+    padding: 3.2rem 0 !important;
+  }
+  .search_candidate {
+    grid-template-columns: repeat(1, 1fr) !important;
+    row-gap: 2rem;
+  }
+  .btn-search {
+    width: 100%;
+    padding: 1.5rem !important;
   }
 }
 
@@ -238,9 +230,6 @@
     width: 80%;
   }
 
-  .logos img {
-    height: 1.2rem;
-  }
   .testimonials {
     grid-template-columns: 1fr;
   }
@@ -270,11 +259,3 @@
     padding: 5rem;
   }
 }
-
-/* 
-- Font sizes (px)
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
-
-- Spacing system (px)
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-*/
